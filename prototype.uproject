@@ -1,0 +1,42 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.3",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "prototype",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "EnhancedInput",
+			"Enabled": true
+		},
+		{
+			"Name": "BachelorHelper",
+			"Enabled": true
+		},
+		{
+			"Name": "BachelorAudio",
+			"Enabled": true
+		},
+		{
+			"Name": "AudioInspector",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/10d3f0d1ed654d89927afb8f4fa5acc0"
+		}
+	],
+	"TargetPlatforms": [
+		"Windows"
+	]
+}

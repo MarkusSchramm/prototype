@@ -1,0 +1,47 @@
+﻿{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "BachelorAudio",
+	"Description": "Sounds, Utilities and baseclasses according game-sfx",
+	"Category": "Other",
+	"CreatedBy": "Markus Schramm",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "AudioProfiler",
+			"Type": "Runtime",
+			"LoadingPhase": "EarliestPossible"
+		},
+		{
+			"Name": "BachelorMetasound",
+			"Type": "Runtime",
+			"LoadingPhase": "EarliestPossible"
+		},
+		{
+			"Name": "AudioPlayerPawn",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "BachelorHelper",
+			"Enabled": true
+		},
+		{
+			"Name": "Metasound",
+			"Enabled": true
+		},
+		{
+			"Name": "EnhancedInput",
+			"Enabled": true
+		}
+	]
+}

@@ -1,0 +1,70 @@
+# Doxyfile for Unreal Engine C++ Project Documentation
+# Recommended usage: run `doxygen` from the root of your project.
+
+# Project info
+PROJECT_NAME           = "Bachelor Prototype Documentaion"
+OUTPUT_DIRECTORY       = C:/dev/bachelor/docs/doxygen
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+
+# Input
+INPUT                  = .
+FILE_PATTERNS          = *.h *.cpp
+RECURSIVE              = YES
+
+# Unreal specific macro support
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+PREDEFINED             = \
+    UCLASS(...)="class" \
+    USTRUCT(...)="struct" \
+    UENUM(...)="enum" \
+    UFUNCTION(...)= \
+    UPROPERTY(...)= \
+    GENERATED_BODY()= \
+    GENERATED_USTRUCT_BODY()= \
+    FORCEINLINE=inline \
+    PURE_VIRTUAL(...)="virtual" \
+    DECLARE_DYNAMIC_MULTICAST_DELEGATE(...)="delegate" \
+    DECLARE_DELEGATE(...)="delegate"
+
+# Extract information
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_ANON_NSPACES   = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+# Show detailed class hierarchy
+CLASS_DIAGRAMS         = YES
+HAVE_DOT               = YES
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+UML_LOOK               = YES
+DOT_UML_DETAILS        = YES
+DOT_GRAPH_MAX_NODES    = 50
+
+# Source browsing
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# Warnings
+WARN_IF_UNDOCUMENTED   = YES
+WARN_NO_PARAMDOC       = YES
+
+# HTML options
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_TIMESTAMP         = YES
+GENERATE_TREEVIEW      = YES
+
+# Set this to the path where your source files live (relative to this Doxyfile)
+STRIP_FROM_PATH        = Source
+
+# If you use Unreal's default module layout, set this accordingly:
+# INPUT = Source/MyGameModule
